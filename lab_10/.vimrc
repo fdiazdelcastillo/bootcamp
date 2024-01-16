@@ -10,8 +10,8 @@ set ruler " Muestra la posición del cursor en la parte inferior derecha
 set showmatch " Muestra la pareja del paréntesis
 
 " Indentación
-set expandtab " Convierte <Tab> en <Espacio>
-set tabstop=2 " <Espacio> que toma un <Tab>
-set softtabstop=2 " <Espacio> que toma un <Tab> en una edición
+set expandtab " Convierte (Tab) en (Espacio)
+set tabstop=2 " <Espacio> que toma un (Tab)
+set softtabstop=2 " (Espacio) que toma un <Tab> en una edición
 set smartindent " Activa indentado inteligente
-set shiftwidth=2 " <Espacio> que toma un <Tab> en auto indentado
+set shiftwidth=2 " (Espacio) que toma un (Tab) en auto indentado
