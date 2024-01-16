@@ -2,6 +2,17 @@
 
 Vim es un editor de texto para terminales
 
+## Tabla de contenido
+
+- [Comandos](#comandos)
+- [Insertar](#insertar)
+- [Desplazar](#desplazar)
+- [Copiar y Pegar](#copiar-y-pegar)
+- [Eliminar](#eliminar)
+- [Reemplazar](#reemplazar)
+- [Buscar](#buscar)
+- [Configuración](#configuración)
+
 ## Comandos
 
 Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
@@ -10,6 +21,8 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - 'w' guardar cambios
 - 'wq' guardar y cerrar el editor de texto
 
+[Volver](#tabla-de-contenido)
+
 ## Insertar
 
 Para hacer uso de estas teclas debemos estar en modo NORMAL
@@ -17,6 +30,8 @@ Para hacer uso de estas teclas debemos estar en modo NORMAL
 - 'i' entra al modo de inserción
 - 'o' crear una nueva línea después de donde nos encontramos y entra en modo inserción
 - 'S-o' crear una nueva línea en la posición anterior de donde nos encontramos y entra en moo inserción
+
+[Volver](#tabla-de-contenido)
 
 ## Desplazar
 
@@ -37,7 +52,9 @@ Para hacer uso de estas teclas debemos estar n modo NORMAL
 - 'e' se desplaza entre finales de palabras
 - 'b' se desplaza hacia atrás entre palabras
 
-## Copiar y pegar
+[Volver](#tabla-de-contenido)
+
+## Copiar y Pegar
 
 Para hacer uso de estas teclas debemos estar n modo NORMAL
 
@@ -45,6 +62,8 @@ Para hacer uso de estas teclas debemos estar n modo NORMAL
 - 'yw' copiar una palabra
 - 'p' pegar después
 - 'S-p' pegar antes
+
+[Volver](#tabla-de-contenido)
 
 ## Eliminar
 
@@ -56,6 +75,8 @@ Para hacer uso de estas teclas debemos estar n modo NORMAL
 - 'x' eliminar un caracter
 - 'S-d' eliminar hacia atrás caracter por caracter
 
+[Volver](#tabla-de-contenido)
+
 ## Reemplazar
 
 Para hacer uso de estas teclas debemos estar n modo NORMAL
@@ -64,19 +85,31 @@ Para hacer uso de estas teclas debemos estar n modo NORMAL
 - 'cw' reemplaza palabra
 - 'ciw' reemplaza palabra sin importar la posición
 
+[Volver](#tabla-de-contenido)
+
 ## Buscar
 
-Para hacer uso de la búsqueda debemos estar en modo NORMAL, y oprimimos las siguiuentes teclas:
+Para hacer uso de la búsqueda debemos estar en modo NORMAL, y oprimimos las siguientes teclas:
 
 - '/' + palabra busca hacia adelante
-- '?' + palabra buca hacia atrás
+- '?' + palabra busca hacia atrás
 
 Después de buscar podemos oprimir
 
 - 'n' se mueve a la siguiente coincidencia
 - 'S-n' se mueve a la anterior coincidencia
 
-## Varios
+[Volver](#tabla-de-contenido)
 
-- 'set number' - mostrar números de líneas
-jjj
+## Configuración
+
+Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
+
+- colorscheme wildcharm " Paleta de colores
+- syntax on " Resalta el código
+- set mouse=a " Habilita el uso del mouse
+- set number " Muestra el número de cada línea
+- set showcmd " Muestra en la parte inferior derecha el comando utilizado
+- set wildmenu " Muestra un menú de comandos con la tecla tab
+set cursorline " Sombrea la línea en donde está el cursor
+- set ruler " Muesta la posición del cursor en la parte inferior deecha
