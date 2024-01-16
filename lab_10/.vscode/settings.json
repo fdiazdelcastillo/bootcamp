@@ -3,7 +3,12 @@
     "caracter",
     "cursorline",
     "expandtab",
+    "Indentación",
+    "indentado",
+    "shiftwidth",
     "showcmd",
+    "showmatch",
+    "smartindent",
     "softtabstop",
     "wildcharm",
     "wildmenu"
