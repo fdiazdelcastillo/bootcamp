@@ -105,6 +105,8 @@ Después de buscar podemos oprimir
 
 Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 
+### Interfaz
+
 - colorscheme wildcharm " Paleta de colores
 - syntax on " Resalta el código
 - set mouse=a " Habilita el uso del mouse
@@ -114,4 +116,10 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 set cursorline " Sombrea la línea en donde está el cursor
 - set ruler " Muesta la posición del cursor en la parte inferior derecha
 
-[Volver](#tabla-de-contenido)
+### Indentación
+
+- set expandtab " Convierte <Tab> en <Espacio>
+- set tabstop=2 " <Espacios> que toma un <Tab>
+- set softtabstop=2 " <Espacio> que toma un <Tab> en una edición
+
+[Volver](#tabla-de-contenido) 
