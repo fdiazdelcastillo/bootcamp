@@ -114,7 +114,7 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - set showcmd " Muestra en la parte inferior derecha el comando utilizado
 - set wildmenu " Muestra un menú de comandos con la tecla tab
 set cursorline " Sombrea la línea en donde está el cursor
-- set ruler " Muesta la posición del cursor en la parte inferior derecha
+- set ruler " Muestra la posición del cursor en la parte inferior derecha
 
 ### Indentación
 

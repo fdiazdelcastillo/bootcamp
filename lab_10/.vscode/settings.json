@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["caracter"]
+  "cSpell.words": [
+    "caracter",
+    "cursorline",
+    "expandtab",
+    "showcmd",
+    "softtabstop",
+    "wildcharm",
+    "wildmenu"
+  ]
 }
