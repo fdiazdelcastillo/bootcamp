@@ -120,10 +120,10 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 
 ### Indentación
 
-- set expandtab " Convierte <Tab> en <Espacio>
-- set tabstop=2 " <Espacios> que toma un <Tab>
-- set softtabstop=2 " <Espacio> que toma un <Tab> en una edición
+- set expandtab " Convierte (Tab) en (Espacio)
+- set tabstop=2 " (Espacio) que toma un (Tab)
+- set softtabstop=2 " (Espacio) que toma un (Tab) en una edición
 - set smartindent " Activa indentado inteligente
-- set shiftwidth=2 " <Espacio> que toma un <Tab> en auto indentado
+- set shiftwidth=2 " (Espacio) que toma un (Tab) en auto indentado
 
 [Volver](#tabla-de-contenido)
