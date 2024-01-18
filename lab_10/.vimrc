@@ -1,3 +1,7 @@
+" Requerido
+source $VIMRUNTIME/defaults.vim " Llama la configuración predefinida de VIM
+set nocompatible " Inhabilita la compatibilidad con vi
+
 " Interfaz
 colorscheme wildcharm " Paleta de colores
 syntax on " Resalta el código
@@ -9,6 +13,9 @@ set showcmd " Muestra en la parte inferior derecha el comando utilizado
 set wildmenu " Muestra un menú de comandos con la tecla tab
 set cursorline " Sombrea la línea en donde está el cursor
 set ruler " Muestra la posición del cursor en la parte inferior derecha
+set list " Útil para ver la diferencia entre tabuladores, espacios y espacios en blanco
+set listchars=multispace:│\ ,tab:│\ ,trail:· " Muestra ( ¦ | ┊ | │ | \| ) por cada indentación
+set laststatus=2 " Muestra siempre la barra de estado
 set showmatch " Muestra la pareja del paréntesis
 set hlsearch " Resalta las coincidencias de la búsqueda
 set incsearch " Resalta las coincidencias mientras se ingresa la palabra buscada 

@@ -17,10 +17,11 @@ Vim es un editor de texto para terminales
 
 Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 
-- 'q' cerrar l editor de texto
+- 'q' cerrar el editor de texto
 - 'w' guardar cambios
+- 'w ' 'ruta de guardado' Guardar el archivo en la ruta de guardado
+- 'w!' 'ruta de guardado' Sobreescribe el archivo en la ruta de guardado
 - 'wq' guardar y cerrar el editor de texto
-- 'w!' 'ruta de guardado' Guardar el archivo en la ruta de guardado
 - 'sp' + 'ruta de archivo' divide la pantalla horizontalmente en el archivo indicado 
 - 'vs' + 'ruta de archivo' divide la pantalla verticalmente en el archivo indicado 
 
@@ -109,6 +110,10 @@ Después de buscar podemos oprimir
 
 Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 
+### Requerido
+- source $VIMRUNTIME/defaults.vim " Llama la configuración predefinida de VIM
+- set nocompatible " Inhabilita la compatibilidad con vi
+
 ### Interfaz
 
 - colorscheme wildcharm " Paleta de colores
@@ -121,11 +126,14 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - set wildmenu " Muestra un menú de comandos con la tecla tab
   set cursorline " Sombrea la línea en donde está el cursor
 - set ruler " Muestra la posición del cursor en la parte inferior derecha
+- set list " Útil para ver la diferencia entre tabuladores, espacios y espacios en blanco
+- set listchars=multispace:│\ ,tab:│\ ,trail:· " Muestra ( ¦ | ┊ | │ | \| ) por cada indentación
+- set laststatus=2 " Muestra siempre la barra de estado
 - set showmatch " Muestra la pareja del paréntesis
 - set hlsearch " Resalta las coincidencias de la búsqueda
 - set incsearch " Resalta las coincidencias mientras se ingresa la palabra buscada 
 
-## Búsqueda
+### Búsqueda
 
 - set ignorecase " Ignora mimúsculas y mayúsculas
 - set smartcase " Solo ignora las mayúsculas y minúsculas si todas las letras son minúsculas
