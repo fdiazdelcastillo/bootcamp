@@ -1,31 +1,27 @@
 # Shell
 # Interfaz para interactuar con el sistema operativo
 
-# Hombrebrew (https://brew.sh)
-# Gestor de paquetes
-
-## Requerimientos (Ubuntu - https://docs.brew.sh/Homebrew-on-Linux#requirements)
-if [[ "$(uname -s)" == Linux* ]] && command -v apt >/dev/null; then
-  sudo apt install build-essential procps curl file git
-fi
-
-## Instalación
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 # ZSH
 
-## Ubuntu
+## Debian or Ubuntu
 if [[ "$(uname -s)" == Linux* ]] && command -v apt >/dev/null; then
   sudo apt update
   sudo apt install zsh
 fi
 
+## Fedora, CentOS, or Red Hat
+if [[ "$(uname -s)" == Linux* ]] && command -v yum >/dev/null; then
+  sudo yarn update
+  sudo yum install zsh
+fi
+
 # Oh My Zsh (https://ohmyz.sh/)
 # Mejora la funcionalidad de zsh
 
-## Preconfiguración
+## Pre-configuración
 [[ -e ~/.oh-my-zsh ]] && rm -rf ~/.oh-my-zsh
 [[ -e ~/.zshrc ]] && rm ~/.zshrc
+[[ -e ~/.zprofile ]] && rm -rf ~/.zprofile
 
 # Instalación
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -60,28 +56,37 @@ Linux*)
   ;;
 esac
 
-# fzf (ihttps://github.com/junegunn/fzf)
-# Mejora la funcionalidad de <C-r> y <C-t>
+# Homebrew (https://brew.sh)
+# Gestor de paquetes
+
+## Preconfiguración
+[[ -e $HOMEBREW_PREFIX ]] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+
+## Requerimientos (https://docs.brew.sh/Homebrew-on-Linux#requirements)
+
+### Debian or Ubuntu
+if [[ "$(uname -s)" == Linux* ]] && command -v apt >/dev/null; then
+  sudo apt install build-essential procps curl file git
+fi
+
+### Fedora, CentOS, or Red Hat
+if [[ "$(uname -s)" == Linux* ]] && command -v yum >/dev/null; then
+  sudo yum groupinstall 'Development Tools'
+  sudo yum install procps-ng curl file git
+fi
+
+## Requerimientos
 
 ## Instalación
-brew install fzf
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## Configuración
-### macOS
-echo '# fzf' >>~/.zshrc
-case "$(uname -s)" in
-Darwin*)
-  ### macOS
-  echo '[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh\n' >>~/.zshrc
-  ;;
-Linux*)
-  ### Linux
-  echo '[ -f  /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh' >>$home/.zshrc
-  echo '[ -f  /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh\n' >>$home/.zshrc
-  ;;
-esac
+echo '# Hombebrew' >>~/.zshrc
+echo "eval \"\$($HOMEBREW_REPOSITORY/bin/brew shellenv)\"\n" >>~/.zshrc
+eval "$($HOMEBREW_REPOSITORY/bin/brew shellenv)"
 
-### ubuntu
+# fzf (ihttps://github.com/junegunn/fzf)
+# Mejora la funcionalidad de <C-r> y <C-t>
 
 # Starship (https://starship.rs)
 # Mejora el prompt (interfaz de entrada) de la consola
@@ -94,7 +99,7 @@ echo '# Starship' >>~/.zshrc
 echo 'eval "$(starship init zsh)"\n' >>~/.zshrc
 
 # The Fuck (https://github.com/nvbn/thefuck)
-# Recomienda correciones
+# Recomienda correcciones
 
 ## Instalación
 brew install thefuck
@@ -113,5 +118,13 @@ if [[ "$(uname -s)" == Linux* ]]; then
   echo 'alias bat=batcat\n' >>~/.zshrc
 fi
 
+## Instalación
+brew install fzf
+
+## Configuración
+echo '# fzf' >>~/.zshrc
+$HOMEBREW_PREFIX/opt/fzf/install
+
 # Activar shell zsh
 chsh -s /bin/zsh
+source ~/.zshrc
