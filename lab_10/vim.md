@@ -20,6 +20,8 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - 'q' cerrar l editor de texto
 - 'w' guardar cambios
 - 'wq' guardar y cerrar el editor de texto
+- 'sp' + 'ruta de archivo' divide la pantalla horizontalmente en el archivo indicado 
+- 'vs' + 'ruta de archivo' divide la pantalla verticalmente en el archivo indicado 
 
 [Volver](#tabla-de-contenido)
 
