@@ -1,6 +1,7 @@
 " Interfaz
 colorscheme wildcharm " Paleta de colores
 syntax on " Resalta el código
+set background=dark " Muestra el ondo de color negro
 set mouse=a " Habilita el uso del mouse
 set number " Muestra el número de cada línea
 set relativenumber " Muestra el número de la línea relativo a la posición del cursor
@@ -11,6 +12,10 @@ set ruler " Muestra la posición del cursor en la parte inferior derecha
 set showmatch " Muestra la pareja del paréntesis
 set hlsearch " Resalta las coincidencias de la búsqueda
 set incsearch " Resalta las coincidencias mientras se ingresa la palabra buscada 
+
+" Búsqueda
+set ignorecase " Ignora mimúsculas y mayúsculas
+set smartcase " Solo ignora las mayúsculas y minúsculas si todas las letras son minúsculas
 
 " Indentación
 set expandtab " Convierte (Tab) en (Espacio)

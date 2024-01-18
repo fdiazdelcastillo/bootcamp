@@ -20,6 +20,7 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - 'q' cerrar l editor de texto
 - 'w' guardar cambios
 - 'wq' guardar y cerrar el editor de texto
+- 'w!' 'ruta de guardado' Guardar el archivo en la ruta de guardado
 - 'sp' + 'ruta de archivo' divide la pantalla horizontalmente en el archivo indicado 
 - 'vs' + 'ruta de archivo' divide la pantalla verticalmente en el archivo indicado 
 
@@ -112,6 +113,7 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 
 - colorscheme wildcharm " Paleta de colores
 - syntax on " Resalta el código
+- set background=dark " Muestra el ondo de color negro
 - set mouse=a " Habilita el uso del mouse
 - set number " Muestra el número de cada línea
 - set relativenumber " Muestra el número de la línea relativo a la posición del cursor
@@ -122,6 +124,11 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - set showmatch " Muestra la pareja del paréntesis
 - set hlsearch " Resalta las coincidencias de la búsqueda
 - set incsearch " Resalta las coincidencias mientras se ingresa la palabra buscada 
+
+## Búsqueda
+
+- set ignorecase " Ignora mimúsculas y mayúsculas
+- set smartcase " Solo ignora las mayúsculas y minúsculas si todas las letras son minúsculas
 
 ### Indentación
 
