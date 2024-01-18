@@ -24,6 +24,8 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - 'wq' guardar y cerrar el editor de texto
 - 'sp' + 'ruta de archivo' divide la pantalla horizontalmente en el archivo indicado 
 - 'vs' + 'ruta de archivo' divide la pantalla verticalmente en el archivo indicado 
+- 'u' deshacer cambio
+- 'C-r' rehacer cambio
 
 [Volver](#tabla-de-contenido)
 
@@ -147,3 +149,6 @@ Los comandos se deben ingresar en el modo NORMAL, oprimiendo primero ":"
 - set shiftwidth=2 " (Espacio) que toma un (Tab) en auto indentado
 
 [Volver](#tabla-de-contenido)
+
+- [Devhint](https://devhints.io/vim)
+- [CheatSheets](https://cheatsheets.zip/vim)
