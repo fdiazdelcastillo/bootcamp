@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import MainCard from "./components/MainCard";
-import SecondaryCard2 from "./components/SecondaryCad2";
+import SecondaryCard2 from "./components/SecondaryCard2";
 import SecondaryCard1 from "./components/SecondaryCard1";
 
 function App() {
