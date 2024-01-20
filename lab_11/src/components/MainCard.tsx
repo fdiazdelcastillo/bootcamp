@@ -21,6 +21,8 @@ function MainCard(props: MainCardProps): React.ReactNode {
           borderRadius: 40,
           aspectRatio: "1059 / 660",
           alignItems: "flex-start",
+          backgroundSize: "cover",
+          gap: 20,
         }}
       >
         <div
