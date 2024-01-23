@@ -1,9 +1,9 @@
 import Rivian from "../assets/images/rivian.jpg";
 
 type MainCardProps = {
-  fecha: string;
-  categoría: "Automóviles";
-  título: string;
+  date: string;
+  category: "Automóviles";
+  title: string;
 };
 
 /*
@@ -34,7 +34,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
             fontSize: 15,
           }}
         >
-          {props.fecha}
+          {props.date}
         </div>
         <div className="child-column flex-grow"></div>
         <div
@@ -53,7 +53,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
               fontSize: 15,
             }}
           >
-            {props.categoría}
+            {props.category}
           </div>
           <div
             className="child-row"
@@ -66,7 +66,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
               width: 350,
             }}
           >
-            {props.título}
+            {props.title}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 type SecondaryCard1Props = {
-  categoría: string;
-  producto: string;
+  category: string;
+  title: string;
   callToAction: string;
 };
 
@@ -27,10 +27,10 @@ function SecondaryCard1(props: SecondaryCard1Props): React.ReactNode {
             fontSize: 15,
           }}
         >
-          · {props.categoría}
+          · {props.category}
         </div>
         <div className="child-row" style={{ fontSize: 30 }}>
-          {props.producto}
+          {props.title}
         </div>
         <div
           className="child-row"
