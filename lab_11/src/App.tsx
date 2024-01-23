@@ -1,6 +1,6 @@
 import "./App.css";
 import Hero from "./assets/sections/Hero";
-import Header from "./components/Header";
+import Header from "./assets/sections/Header";
 
 function App() {
   return (
@@ -14,9 +14,16 @@ function App() {
           }}
         >
           <Header
-            título="TechBlog."
-            opcionesDeNavegación={["Artículos", "Ser escritor"]}
-            menú="Menú"
+            brand="TechBlog."
+            links={[
+              {
+                url: "#",
+                name: "Artículos",
+              },
+              { url: "#", name: "Ser escritor" },
+              { url: "#", name: "Blog" },
+              { url: "#", name: "Contacto" },
+            ]}
           />
           <Hero />
         </body>

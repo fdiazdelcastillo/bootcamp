@@ -1,10 +1,37 @@
+import React from "react";
+
+type link = {
+  url: string;
+  name: string;
+};
+
 type HeaderProps = {
-  título: string;
-  opcionesDeNavegación: string[];
-  menú: string;
+  brand: string;
+  links: link[];
 };
 
 function Header(props: HeaderProps): React.ReactNode {
+  let linkItems: React.ReactNode[] = [];
+
+  for (let i = 0; i < props.links.length; i++) {
+    const link = props.links[i];
+
+    linkItems = [
+      ...linkItems,
+      <a
+        href={link.url}
+        className="child-column"
+        style={{
+          fontSize: 15,
+          textDecoration: "none",
+          color: "black",
+        }}
+      >
+        {link.name}
+      </a>,
+    ];
+  }
+
   return (
     <>
       <div id="header" className="child-row parent-row">
@@ -22,7 +49,7 @@ function Header(props: HeaderProps): React.ReactNode {
               fontStyle: "italic",
             }}
           >
-            {props.título}
+            {props.brand}
           </div>
           <div
             className="child-column parent-row"
@@ -30,22 +57,7 @@ function Header(props: HeaderProps): React.ReactNode {
               gap: 25,
             }}
           >
-            <div
-              className="child-column"
-              style={{
-                fontSize: 15,
-              }}
-            >
-              {props.opcionesDeNavegación[0]}
-            </div>
-            <div
-              className="child-column"
-              style={{
-                fontSize: 15,
-              }}
-            >
-              {props.opcionesDeNavegación[1]}
-            </div>
+            {linkItems}
           </div>
         </div>
         <div className="child-column flex-grow"></div>
@@ -57,7 +69,7 @@ function Header(props: HeaderProps): React.ReactNode {
             borderRadius: 100,
           }}
         >
-          {props.menú}
+          Menú
         </div>
       </div>
     </>
