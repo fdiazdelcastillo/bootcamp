@@ -1,4 +1,5 @@
 import SCImage from "../assets/images/dji.jpg";
+import Arrow from "../assets/images/arrow.svg";
 
 type SecondaryCard2Props = {
   buttonText: string;
@@ -35,7 +36,7 @@ function SecondaryCard2(props: SecondaryCard2Props): React.ReactNode {
               {props.buttonText}
             </div>
             <div className="child-column">
-              <img src="./images/arrow.svg" alt="" />
+              <img src={Arrow} alt="" />
             </div>
           </div>
         </div>

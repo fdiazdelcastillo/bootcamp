@@ -14,7 +14,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
     <>
       <div
         id="main-card"
-        className="parent-row"
+        className="parent-row flex-grow"
         style={{
           padding: 45,
           backgroundImage: `url(${Rivian})`,
