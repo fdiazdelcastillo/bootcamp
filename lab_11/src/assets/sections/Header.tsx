@@ -52,6 +52,7 @@ function Header(props: HeaderProps): React.ReactNode {
             {props.brand}
           </div>
           <div
+            id="links"
             className="child-column parent-row"
             style={{
               gap: 25,

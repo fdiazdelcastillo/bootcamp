@@ -1,8 +1,8 @@
-import SCImage from "../assets/images/dji.jpg";
-import Arrow from "../assets/images/arrow.svg";
+import Arrow from "../assets/icons/arrow.svg";
 
 type SecondaryCard2Props = {
   buttonText: string;
+  image: string;
 };
 
 function SecondaryCard2(props: SecondaryCard2Props): React.ReactNode {
@@ -12,7 +12,7 @@ function SecondaryCard2(props: SecondaryCard2Props): React.ReactNode {
         id="secondary-card-2"
         className="parent-column"
         style={{
-          backgroundImage: `url(${SCImage})`,
+          backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
           aspectRatio: "391 / 353",
           borderRadius: 40,

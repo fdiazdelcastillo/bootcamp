@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       <html>
-        <body
+        <div
+          id="container"
           className="parent-column"
           style={{
             padding: 60,
@@ -16,17 +17,12 @@ function App() {
           <Header
             brand="TechBlog."
             links={[
-              {
-                url: "#",
-                name: "Artículos",
-              },
+              { url: "#", name: "Artículos" },
               { url: "#", name: "Ser escritor" },
-              { url: "#", name: "Blog" },
-              { url: "#", name: "Contacto" },
             ]}
           />
           <Hero />
-        </body>
+        </div>
       </html>
     </>
   );

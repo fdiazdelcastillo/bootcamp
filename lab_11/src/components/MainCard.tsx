@@ -1,9 +1,8 @@
-import Rivian from "../assets/images/rivian.jpg";
-
 type MainCardProps = {
   date: string;
   category: "Automóviles";
   title: string;
+  image: string;
 };
 
 /*
@@ -17,7 +16,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
         className="parent-row flex-grow"
         style={{
           padding: 45,
-          backgroundImage: `url(${Rivian})`,
+          backgroundImage: `url(${props.image})`,
           borderRadius: 40,
           aspectRatio: "1059 / 660",
           alignItems: "flex-start",
@@ -63,7 +62,7 @@ function MainCard(props: MainCardProps): React.ReactNode {
               borderRadius: 25,
               borderTopLeftRadius: 0,
               fontSize: 30,
-              width: 350,
+              maxWidth: 350,
             }}
           >
             {props.title}
