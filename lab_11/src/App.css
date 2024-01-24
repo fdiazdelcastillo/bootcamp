@@ -55,4 +55,7 @@ html {
   #container {
     padding: 40px !important;
   }
+  #broadcast .call-to-action {
+    font-size: 40px !important;
+  }
 }

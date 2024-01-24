@@ -1,6 +1,7 @@
 import "./App.css";
 import Hero from "./assets/sections/Hero";
 import Header from "./assets/sections/Header";
+import BroadCast from "./assets/sections/BroadCast";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             ]}
           />
           <Hero />
+          <BroadCast callToAction="Ser parte de Nuestro Broadcast" />
         </div>
       </html>
     </>
